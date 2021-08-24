@@ -9,10 +9,8 @@
         content="Minha lista de compras personalizadas"
     />
 
-    <link rel="stylesheet" href="./styles.css"/>
-    <link rel="stylesheet" href="./globals.css"/>
-
     <title>My Shopping List</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
@@ -21,62 +19,51 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./globals.css"/>
 </head>
-<body>
-    <div class="container">
-        <div class="form-container">
-            <h1  class="form-container__header">Shopping List</h1>
-            <form name="grocery" class="form" autocomplete="off">
-                <div class="form-group">
-                    <input type="text" required name="item" class="form__input"/>
-                    <input type="submit" name="save" value="To add" class="form__button"/>
-                </div>
-            </form>
-            <div class="items">
-                <div class="item">
-                    <div class="item__text">Bread</div>
-                    <div class="item__actions">
-                    
-                        <span class="material-icons">
-                        <span class="item__edit" for="material-icons-outlined">
-                            mode_edit
-                        </span>
-                       
-                        <span class="item__delete" for="material-icons-outlined">
-                            delete
-                        </span>
-
-                    </span>
-                   </div>
+    <body>
+        <div class="conatiner">
+            <div class="form-container">
+                <h1 class="form-container__header">Shopping List</h1>
+                <form name="grocery" class="form" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" required name="item" class="form__input"/>
+                        <input type="submit" 
+                        name="save"
+                        value="Add"
+                        class="form__button"
+                        />
                     </div>
-                </div>
-                
-            <div class="items">
-                <div class="item">
-                    <div class="item__text">Fruits</div>
-                        <div class="item__actions">                        
-                        <span class="material-icons">
-                            <span class="item__edit">mode_edit</span>                           
-                            <span class="item__delete">delete</span>    
-                        </span>
-                       </div>
+                </form>
+                <div class="items">
+                    <div class="item">
+                        <div class="item__text">Bread</div>
+                        <div class="item__actions">
+                            <span class="item__edit">edit</span>
+                            <span class="item__delete">delete</span>
+                        </div>
                     </div>
-                </div>
 
-            <div class="item">
-                <div class="item__text">Mushrooms</div>
-                    <div class="item__actions">                        
-                        <span class="material-icons">
-                        <span class="item__edit">mode_edit</span>                           
-                        <span class="item__delete">delete</span>    
-                        </span>
+                    <div class="item">
+                        <div class="item__text">Fruits</div>
+                        <div class="item__actions">
+                            <span class="item__edit">edit</span>
+                            <span class="item__delete">delete</span>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="item__text">Mushrooms</div>
+                        <div class="item__actions">
+                            <span class="item__edit">edit</span>
+                            <span class="item__delete">delete</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>        
-    </div>
-        </div>
-            </body>
-                    </html>
+    </body>
+</html>
